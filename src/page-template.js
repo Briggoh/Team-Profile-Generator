@@ -49,15 +49,23 @@ module.exports = templateData => {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <title>My Team</title>
         </head>
         <body>
-            <header>
-            <h1 class="text-center">My Team</h1>
-            </header>
-            ${generateCards(templateData)}
-        </body>
-        </html>    
+            <div class ="container-fluid">
+                <div class = "row">
+                    <div class = "col-12 jumbotron mb-3 team-heading bg-danger">
+                        <h1 class= "text-center text-white">My Team</h1>
+                    </div>
+                </div>
+            </div> 
+            <div class="container">
+                <div class="row">
+                    <div class= "row team-area col-12 d-flex justify content-center">
+                        ${generateCards(templateData)}
+                    </div>
+                </div>
+            </div>
+        </body>  
         `
 }
 
