@@ -3,11 +3,18 @@ const generateCards = teamData => {
     const manager = teamData.manager.map(function(job) {
         let managerHtml = `
         <div class="card" style="width: 18rem;">
-            <h2>${job.name}</h2>
-            <h4>Manager<h4>
-            <p>ID: ${job.id}</p>
-            <p>Email: <a href="mailto:${job.email}">${job.email}</a></p>
-            <p>Office Number: ${job.office}</p>
+            <div class = "card-header bg-danger text-white">
+                <h2 class = "card-title">${job.name}</h2>
+                <h4>Manager<h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID:${job.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${job.email}">${job.email}</a></li>
+                    <li class="list-group-item">Office Number: ${job.office} </li>
+
+                </ul>
+            </div>
         </div>
         `
         return managerHtml
@@ -16,11 +23,17 @@ const generateCards = teamData => {
     const engineer = teamData.engineer.map(function(job) {
         let engineerHtml = `
         <div class="card" style="width: 18rem;">
-            <h2>${job.name}</h2>
-            <h4>Engineer<h4>
-            <p>ID: ${job.id}</p>
-            <p>Email: <a href="mailto:${job.email}">${job.email}</a></p>
-            <p> Github: <a href="https://github.com/${job.github}" target="_blank">${job.github}</a></p>
+             <div class = "card-header bg-danger text-white">
+                <h2 class = "card-title">${job.name}</h2>
+                <h4>Engineer<h4>
+             </div>
+             <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID:${job.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${job.email}">${job.email}</a></li>
+                    <li class="list-group-item">Github: <a href="https://github.com/${job.github}" target="_blank">${job.github}</a> </li>
+                </ul>
+            </div>
         </div>
         `
         return engineerHtml
@@ -29,11 +42,17 @@ const generateCards = teamData => {
     const intern = teamData.intern.map(function(job) {
         let interHtml = `
         <div class="card" style="width: 18rem;">
-            <h2>${job.name}</h2>
-            <h4>Intern<h4>
-            <p>ID: ${job.id}</p>
-            <p>Email: <a href="mailto:${job.email}">${job.email}</a></p>
-            <p> School: ${job.school}</p>
+            <div class = "card-header bg-danger text-white">
+                <h2 class = "card-title">${job.name}</h2>
+                <h4>Intern<h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID:${job.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${job.email}">${job.email}</a></li>
+                    <li class="list-group-item">School: ${job.school}</li>
+                </ul>
+            </div>
         </div>
         `
         return interHtml
