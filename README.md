@@ -1,4 +1,4 @@
-# README Generator 
+# Team Profile Generator 
 
 # Project Description 
 
