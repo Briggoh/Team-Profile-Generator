@@ -23,7 +23,8 @@ Testing for this application can be administed through the node package, "jest".
 
 ## Preview:
 
-update later 
+Attached below is a video containing a demonstration of the software.
+https://www.loom.com/share/9f220adde7f54c9a94cc49031fc7081f
 
 ## Programs/Languages Utilized:
 
