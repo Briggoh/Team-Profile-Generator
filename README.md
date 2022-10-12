@@ -26,6 +26,9 @@ Testing for this application can be administed through the node package, "jest".
 Attached below is a video containing a demonstration of the software.
 https://www.loom.com/share/9f220adde7f54c9a94cc49031fc7081f
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/109489824/195445743-6b83652d-d782-422f-974c-3b7b6226a1a9.gif)
+
+
 ## Programs/Languages Utilized:
 
 1. Node.js
