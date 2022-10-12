@@ -35,8 +35,6 @@ update later
 
 ## Contact Me:
 
-To view my other projects, access my GitHub profile at https://github.com/Briggoh?tab=repositories. 
-
 You are encouraged to contact me with any questions/comments/concerns at H.E.Briggs99@gmail.com. Feedback is always greatly appreciated!
 
 

@@ -19,10 +19,10 @@ let intern = [];
 let employeeArr = {manager, engineer, intern};
 
 function Prompt() {
-    
+    // questions to be answered by user in terminal
     return inquirer
         .prompt([
-        {
+        {   // General questions for each position
             type: 'list',
             name: 'role',
             message:"What is the employee's role?",
@@ -46,6 +46,7 @@ function Prompt() {
         .then(({employee, id, email, role}) => {
             if (role === "Manager") {
                 return inquirer
+                    // Manager questions
                     .prompt([{
                         type:'text',
                         name: 'office',
@@ -59,7 +60,6 @@ function Prompt() {
                     }])
                     .then(({office, anotherEntry}) => {
                         manager.push(new Manager(employee, id, email, office))
-                        // console.log(employeeArr)
                         if (anotherEntry) {
                             return Prompt();
                         }
@@ -67,6 +67,7 @@ function Prompt() {
             } else if (role === "Engineer") {
                 return inquirer
                     .prompt([{
+                        // Engineer Questions
                         type: 'text',
                         name: 'github',
                         message: "What is the Engineer's Github username?"
@@ -79,12 +80,12 @@ function Prompt() {
                     }])
                     .then(({github, anotherEntry}) => {
                         engineer.push(new Engineer(employee, id, email, github))
-                        // console.log(employeeArr)
                         if (anotherEntry) {
                             return Prompt();
                         }
                     })
             } else if (role === 'Intern') {
+                // Intern Questions
                  return inquirer
                     .prompt([{
                         type:'text',
@@ -109,7 +110,7 @@ function Prompt() {
 };
 
 
-
+// Initiates prompt function
 Prompt()
     .then(teamData => {
         return generatePage(employeeArr)
